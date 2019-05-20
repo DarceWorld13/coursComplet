@@ -1,0 +1,24 @@
+<h1>Hello C1</h1>
+
+<p>{{unTexte}}</p>
+<p>{{'une phrase' + ' qui continue'}}</p>
+<p>3+2 = {{3+2}}</p>
+<p>5+4 = {{additionner(5, 4)}}</p>
+
+<h1>Crocodile</h1>
+<div [hidden]="cacherCrocodile">
+  Taille : {{dundee.taille}} 
+  Couleur : {{dundee.couleur}}
+  Inconnnu : {{dundee.inconnu?.fff}} 
+</div>
+<p>{{messageCrocodile}}</p>
+<input type="text" #saisie (keydown.enter)="cacherAfficherCroco(saisie)">
+<button (click)="cacherAfficherCroco(saisie)">Cacher/Afficher Crocodile</button>
+
+<hr>
+
+<app-c2 [croco]="dundee" [nom]="'dundee'" (jaiFaim)="traiterLaFaimDunCroco($event)"></app-c2>
+
+<hr>
+
+<app-c2 [croco]="gali" [nom]="'gali'"></app-c2>

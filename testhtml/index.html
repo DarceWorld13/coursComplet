@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    td{
+        border: solid; 
+        border-collapse: collapse; 
+    }
+    th{
+        border: solid; 
+    }
+    table{
+        border-collapse: collapse; 
+    }
+    textarea{
+        width: 800px; 
+        height: 200px;
+        resize: none; 
+    }
+    img{
+        width: 20px; 
+        height: 20px;
+    }
+    
+    </style>
+
+</head>
+<body>
+    
+<header>LA Florentina</header>
+
+<h1>Pizzéria</h1>
+<nav>
+<ul>
+    <li> <a href="">accueil</a></li>
+    <li><a href="">Nos pizzas</a></li>
+    <li> <a href="">Contact</a></li>
+</ul>
+</nav>
+<section>
+    <article>
+        <h1> à propos</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+            Repudiandae magni maiores eum cum quidem nihil ratione sunt aperiam
+             tempore iusto nobis voluptate repellendus voluptates nulla optio 
+             asperiores, explicabo rerum possimus.</p>
+    </article>
+    <article>
+        <h1>Je suis un grand voyageur</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Sequi distinctio eos vero, odit rem, adipisci sint doloribus
+             ea ratione nemo rerum debitis iure molestias tempora aut maxime, 
+             accusantium cumque. Necessitatibus?</p>
+    </article>
+</section>
+
+<section>
+    <table style = "border: solid ; width: 600px">
+        <tr style = "border: solid" >
+            <td style = "border: solid" colspan="2">A</td>
+           
+        </tr>
+        <tr style = "border: solid">
+            <td style = "border: solid">B</td>
+            <td style = "border: solid" rowspan="2">D</td>
+        </td>
+        <tr style = "border: solid">
+            <td style = "border: solid">C</td>
+            
+        </tr>
+        
+    </table>
+    <br>
+    <br>
+    <br>
+
+</section>
+
+<table style="border: solid; width : 800px">
+<th>ID.</th>
+<th>NOM</th>
+<th>Prénom</th>
+<th>Ville</th>
+<th>AGE</th>
+<tr>
+    <td>1</td>
+    <td>Ferguson</td>
+    <td>tony</td>
+    <td>orange county</td>
+    <td>33</td>
+</tr>
+<tr>
+        <td>2</td>
+        <td>Nurmagomedov </td>
+        <td>khabib</td>
+        <td>dagestan</td>
+        <td>31</td>
+    </tr>
+    <tr>
+         <td>3</td>
+            <td>Poirier</td>
+            <td>Dustin</td>
+            <td>florida</td>
+            <td>32</td>
+     </tr>
+        <tr>
+            <td>4</td>
+                <td>Lee</td>
+                <td>kevin</td>
+                <td>Chicago</td>
+                <td>26</td>
+            </tr>
+            <tr>
+              <td>5</td>
+                    <td>Gaethje</td>
+                    <td>justin</td>
+                    <td>Colorado</td>
+                    <td>29</td>
+             </tr>
+              <tr>
+                    <td>6</td>
+                        <td>Dos Anjos</td>
+                        <td>Rafael</td>
+                        <td>sao paulo</td>
+                    <td>33</td>
+             </tr>
+                    <tr>
+                         <td>7</td>
+                            <td>Chiesa</td>
+                            <td>michael</td>
+                            <td>NY</td>
+                            <td>34</td>
+                        </tr>
+             <tr>
+                 <td colspan="3"></td>
+                <td>Moyenne</td>
+                <td>32</td>
+             </tr>
+</table>
+
+<!--select et options-->
+<br>
+<br>
+
+<form >
+<label for="Jour">Jour</label>
+<select name="Jour" > 
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+</select>
+<label for="mois">Mois</label>
+<select name="mois" > 
+    <option value="janvier">janvier</option>
+    <option value="fevrier">fevrier</option>
+    <option value="mars">mars</option>
+    <option value="avril">avril</option>
+    <option value="mai">mai</option>
+    <option value="juin">juin</option>
+    <option value="juillet">juillet</option>
+</select>
+<label for="année">Année</label>
+<select name="année" > 
+    <option value="2019">2019</option>
+    <option value="2018">2018</option>
+    <option value="2017">2017</option>
+    <option value="2016">2016</option>
+    <option value="2015">2015</option>
+</select>
+<br>
+<br>
+<label for="commentaire"> Des commentaires</label><br>
+<textarea name="commentaire" placeholder="vos commentaires s'il vous plait"></textarea>
+</form>
+<br>
+<br>
+
+<table style="width : 800px; height: 300px;">
+<th>ID</th>
+<th>Libelle</th>
+<th>référence</th>
+<th>prix</th>
+<th>photo</th>
+
+<tr>
+    <td>1</td>
+    <td>Reine</td>
+    <td>REI</td>
+    <td>9.99</td>
+    <td><img src="reine.jpg" alt="reine"></td>
+</tr>
+
+<tr>
+     <td>2</td>
+        <td>Orientale</td>
+        <td>ORI</td>
+        <td>9.87</td>
+        <td><img src="ori.jpeg" alt="orientale"></td>
+    </tr>
+
+    <tr>
+            <td>3</td>
+            <td>peperonni</td>
+            <td>PEP</td>
+            <td>10.99</td>
+            <td><img src="pep.jpg" alt="reine"></td>
+        </tr>
+</table>
+
+
+
+<footer>
+    <p>Copyright La Florentina - tous droits réservés</p>
+    <a href="mailto:test@test.com">Nous contacter</a>
+</footer>
+
+
+
+
+
+
+</body>
+</html>

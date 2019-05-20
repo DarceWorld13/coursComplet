@@ -1,0 +1,13 @@
+<form class="form-inline">
+  <div class="form-group mx-sm-3 mb-2">
+    <label>Rechercher par Nom</label>
+    <input type="text" class="form-control" placeholder="nom" #saisie>
+  </div>
+  <button type="button" (click)="findByNom(saisie.value)" class="btn btn-primary mb-2">rechercher</button>
+</form>
+<ul>
+  <li *ngFor="let matri of listeMatricules">
+    {{matri}}
+  </li>
+</ul>
+ 

@@ -1,0 +1,38 @@
+form, table, header{
+    margin-left: 35%; 
+    margin-right: 30%;
+
+}
+
+nav ul{
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-around; 
+    flex-wrap: nowrap; 
+    background-color: black; 
+    color: white; 
+    list-style: none; 
+    line-height: 40px; 
+    margin-bottom: 0; 
+    opacity: 0.8;
+    border-radius: 20px;
+
+}
+form, table{
+    background-color: black; 
+    color: white; 
+    border-radius: 20px;
+    text-align: center;
+
+}
+
+nav ul a {
+    color: green;
+}
+nav ul a:hover{
+    color:red;
+}
+img{
+    width: 60px; 
+    height: 60px;
+}

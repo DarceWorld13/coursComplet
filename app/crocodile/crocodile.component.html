@@ -1,0 +1,48 @@
+<p [class.pink]="afficherPink()">
+  Un texte coloré
+</p>
+
+
+
+<p [style.color]="couleurTexte" [style.fontSize]="tailleTexte">
+  crocodile works!
+  <input type="texte" #saisie1>
+  <input type="texte" #saisie2>
+  <app-img-croco [imageUrl]="urlImage" (nouvelleTaille)="traiterNouvelleTailleImage($event)"></app-img-croco>
+  <button (mouseover)="passageSourisSurBouton()">Mange</button>
+  <button (click)="saisie1.focus()">Focus Saisie 1</button>
+  <button (click)="saisie2.focus()">Focus Saisie 2</button>
+  <button (click)="changerImage(saisie1.value)"
+    *ngIf="couleurTexte == 'green'; then couleurVerte; else couleurPasVerte">Changer
+    Image</button>
+  <ng-template #couleurVerte> 
+
+    Youpi la couleur est verte </ng-template>
+  <ng-template #couleurPasVerte>
+
+    couleur pas verte, donc pas de bouton
+  </ng-template>
+  {{nbPassage}}
+</p>
+
+<ul>
+  <li *ngFor="let nb of tableauNombres">
+    {{nb}}
+  </li>
+</ul>
+
+{{tableauCollegues | json}}
+
+<div *ngFor="let col of tableauCollegues">
+
+  <img [src]="col.photoUrl">
+  Nom : {{col.nom}}
+</div>
+
+
+<div [ngSwitch]="nombreMessage">
+
+  <p *ngSwitchCase="0">Pas de message {{ methode(0)}}</p>
+  <p *ngSwitchCase="1">1 message {{ methode(1)}}</p>
+  <p *ngSwitchDefault>Plusieurs messages</p>
+</div>
